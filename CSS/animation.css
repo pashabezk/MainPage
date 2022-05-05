@@ -1,0 +1,93 @@
+@supports (-webkit-text-stroke: 1px black) {
+	.big-sliding-text-container-2 {
+		color: transparent;
+		-webkit-text-stroke: 1px black;
+	}
+}
+
+.infinity-sliding-text {
+	font-size: 132px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	transform: translate(-30%, 0);
+	white-space: nowrap;
+}
+
+.infinity-sliding-text span {
+	animation: infinity-sliding-text-animation 30s linear infinite;
+	animation-delay: -15s;
+	display: inline-block;
+	padding-left: 100%;
+}
+
+.infinity-sliding-text-2 span {
+	animation-delay: 0s;
+}
+
+@keyframes infinity-sliding-text-animation {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+
+.floating-right {
+	opacity: 1;
+	transform: translateX(50px);
+}
+
+.floating-right.show-animation {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateX(0);
+}
+
+.floating-right.hide-animation {
+	opacity: 0;
+	transition: all 1.5s;
+	transform: translateX(50px);
+}
+
+.floating-right-2 {
+	opacity: 1;
+	transform: translateX(30px);
+	transition-delay: .3s;
+}
+
+.floating-right-2.show-animation {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateX(0);
+}
+
+.floating-right-2.hide-animation {
+	opacity: 0;
+	transition: all 1.5s;
+	transform: translateX(30px);
+}
+
+.jumping-block {
+	opacity: 1;
+	transform: translateY(30px);
+}
+
+.jumping-block.show-animation {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateY(0);
+}
+
+.jumping-block.disable-animation-top {
+	opacity: 0;
+	transition: all 1.5s;
+	transform: translateY(-30px);
+}
+
+.jumping-block.disable-animation-bottom {
+	opacity: 0;
+	transition: all 1.5s;
+	transform: translateY(30px);
+}

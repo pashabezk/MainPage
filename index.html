@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P A S H A B E Z K</title>
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/animation.css">
+  <link rel="stylesheet" href="CSS/projects.css">
+</head>
+<body>
+  <div class="main-container">
+    <header class='menu-container' id='header'>
+      <nav class="navbar">
+        <ul>
+          <li><a href="javascript:void(0)">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="preview-about-me">
+      <img src="Img/Me.jpg">
+      <div class="name-box">
+        <p class="animate-it floating-right-2">Безкоровайный Павел</p>
+        <p class="animate-it floating-right">Разработчик ПО</p>
+        <div class="technologies">
+          <p>Java</p>
+          <p>Kotlin</p>
+          <p>C/C++</p>
+          <p>C#</p>
+          <p>Python</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>MySQL</p>
+        </div>
+      </div>
+    </div>
+    <div class='big-sliding-text-container'>
+      <div id='pashabezk_text'>PASHABEZK</div>
+    </div>
+    <div class='big-sliding-text-container big-sliding-text-container-2'>
+      <p class='infinity-sliding-text'><span>SOFTWARE DEVELOPER SOFTWARE DEVELOPER&nbsp;</span></p>
+      <p class='infinity-sliding-text infinity-sliding-text-2'><span>SOFTWARE DEVELOPER SOFTWARE DEVELOPER&nbsp;</span></p>
+    </div>
+    <div class="header-big animate-it floating-right" id="about">About me</div>
+    <h1 class="header-small animate-it floating-right-2">Обо мне</h1>
+    <div class="about-me">
+      <p class="jumping-block">Привет! Меня зовут Безкоровайный Павел.</p>
+      <p class="jumping-block">Добро пожаловать на мой сайт-визитку.</p>
+      <p class="jumping-block">Я студент университета ИТМО факультета Инфокоммуникационных технологий.</p>
+      <p class="jumping-block">Ниже представлен список моих проектов.
+        Он достаточно разнородный по причине того, что я пытаюсь пробовать себя в разных областях: настольные приложения, мобильные, веб.
+        Изучаю разные технологии и пробую применять их на практике
+      </p>      
+    </div>
+    <div class="header-big animate-it floating-right" id="projects">Projects</div>
+    <h1 class="header-small animate-it floating-right-2">Проекты</h1>
+    <ul class="hexGrid" id="projectsList">
+      <!-- <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="javascript:void(0)">
+            <img src="Img\Projects\2.jpg" alt=""/>
+            <h2>Заголовок</h2>
+            <p>Краткий текст</p>
+          </a>
+        </div>
+      </li> -->
+    </ul>
+    <div class="header-big animate-it floating-right" id="contacts">Contacts</div>
+    <h1 class="header-small animate-it floating-right-2">Контакты</h1>
+    <div class="contacts-container">
+      <p class="jumping-block">Во всех социальных сетях меня можно найти по короткому адресу <span style="color: blue;">@pashabezk</span></p>
+      <div class="contact jumping-block">
+        <a href="https://vk.me/pashabezk" target="_blank">
+          <span class="rectangle">&nbsp;</span>
+          Вконтакте
+          <span class="contact-link">https://vk.me/pashabezk</span>
+        </a>
+      </div>
+      <div class="contact jumping-block">
+        <a href="https://t.me/pashabezk" target="_blank">
+          <span class="rectangle">&nbsp;</span>
+          Telegram
+          <span class="contact-link">https://t.me/pashabezk</span>
+        </a>
+      </div>
+      <div class="contact jumping-block">
+        <a href="https://instagram.com/pashabezk" target="_blank">
+          <span class="rectangle">&nbsp;</span>
+          Instagram
+          <span class="contact-link">https://instagram.com/pashabezk</span>
+        </a>
+      </div>
+      <div class="contact jumping-block">
+        <a href="https://github.com/pashabezk" target="_blank">
+          <span class="rectangle">&nbsp;</span>
+          GitHub
+          <span class="contact-link">https://github.com/pashabezk</span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer-container">
+      <hr class="jumping-block">
+      <div class="center">
+        <button class="button-up jumping-block"><a href="#header">↑ Наверх ↑</a></button>
+      </div>
+      
+    </footer>
+  </div>
+  <script src="Scripts/main.js"></script> <!-- src="/Scripts/main.js" -->
+</body>
+</html>
+
+<!-- https://css-tricks.com/books/greatest-css-tricks/scroll-animation/ -->
+<!-- https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break software developer -->
+
+<!-- сетка из шестиугольников https://atuin.ru/blog/setka-iz-shestiugolnikov-na-css/#   -- index3
+http://gearmobile.github.io/page27/ -- index4 -->
+
+<!-- <p class="jumping-block" style="font-size: 22px">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <p class="jumping-block" style="font-size: 22px">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <p class="jumping-block" style="font-size: 22px">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <p class="jumping-block" style="font-size: 22px">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> -->
