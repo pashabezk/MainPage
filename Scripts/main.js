@@ -53,7 +53,7 @@ projects =  [
   {
     "title":"This site",
     "desc":"HTLM+CSS+JS",
-    "link":"javascript:void(0)",
+    "link":"https://github.com/pashabezk/SiteAboutMe",
     "imgLink":"Img\\Projects\\Site.png"
   }
 ]

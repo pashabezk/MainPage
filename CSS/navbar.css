@@ -2,11 +2,13 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
+	flex-wrap: wrap;
 }
 
 .navbar li {
 	list-style: none;
-	padding: 10px 0;
+	padding: 10px 20px;
+	white-space: nowrap;
 }
 
 .navbar li a {

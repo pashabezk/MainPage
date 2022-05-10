@@ -91,3 +91,56 @@
 	transition: all 1.5s;
 	transform: translateY(30px);
 }
+
+.scaling-x.show-animation {
+	transform: scaleX(1);
+	transition: all 1.5s;
+}
+
+.scaling-x.hide-animation {
+	transform: scaleX(0);
+	transition: all 1.5s;
+}
+
+.add-letter-spacing {
+	letter-spacing: -15px;
+}
+
+.add-letter-spacing.show-animation {
+	transition: all 1.5s;
+	letter-spacing: normal;
+}
+
+.add-letter-spacing.hide-animation {
+	transition: all 1.5s;
+	letter-spacing: -12px;
+}
+
+@keyframes shake-bottom {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+	10% {
+		transform: rotate(2deg);
+	}
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+	80% {
+		transform: rotate(-2deg);
+	}
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+/*https://animista.net/play/text*/
