@@ -1,8 +1,9 @@
-document.getElementById("pashabezk_text").style.marginRight = '-250px';
-
 // добавление прокручивания текста PASHABEZK при прокрутке страницы
+pashabezk_text = document.getElementById("pashabezk_text");
+pashabezk_text.style.marginRight = '-250px';
+pashabezk_text.style.transition = 'all 0.3s';
 window.addEventListener('scroll', function(e) {
-  document.getElementById("pashabezk_text").style.marginRight = this.scrollY -250 +"px";
+  pashabezk_text.style.marginRight = this.scrollY -250 +"px";
   this.oldScroll = this.scrollY;
 }, false);
 
@@ -52,7 +53,7 @@ projects =  [
   },
   {
     "title":"This site",
-    "desc":"HTLM+CSS+JS",
+    "desc":"HTML+CSS+JS",
     "link":"https://github.com/pashabezk/SiteAboutMe",
     "imgLink":"Img\\Projects\\Site.png"
   }
@@ -61,7 +62,6 @@ projects =  [
 
 var projectsGrid = document.getElementById("projectsList");
 
-i=0;
 projects.forEach( elem => {
   var li = document.createElement("li");
   li.classList.add('hex');

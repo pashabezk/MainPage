@@ -36,7 +36,6 @@
 
 .floating-right {
 	opacity: 1;
-	transform: translateX(50px);
 }
 
 .floating-right.show-animation {
@@ -53,7 +52,6 @@
 
 .floating-right-2 {
 	opacity: 1;
-	transform: translateX(30px);
 	transition-delay: .3s;
 }
 
@@ -107,13 +105,27 @@
 }
 
 .add-letter-spacing.show-animation {
-	transition: all 1.5s;
 	letter-spacing: normal;
 }
 
 .add-letter-spacing.hide-animation {
-	transition: all 1.5s;
 	letter-spacing: -12px;
+}
+
+.add-letter-spacing.show-animation a {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+	transition: all 1.5s;
+}
+
+.add-letter-spacing.hide-animation a {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+	transition: all 1.5s;
 }
 
 @keyframes shake-bottom {

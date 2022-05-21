@@ -1,4 +1,5 @@
 body {
+	font: Arial;
 	font-family: sans-serif;
 	overflow-x: hidden;
 	width: 100%;
@@ -7,6 +8,10 @@ body {
 html {
 	width: 100%;
 	overflow-x: hidden;
+}
+
+p {
+	font-size: 24px;
 }
 
 .main-container {
@@ -29,6 +34,16 @@ html {
 	margin: 15px 20px;
 	height: 300px;
 	width: 300px;
+}
+
+.preview-about-me img:hover {
+	border-radius: 45%;
+	transition: all 0.5s;
+}
+
+.preview-about-me img:not(:hover) {
+	border-radius: 50%;
+	transition: all 0.5s;
 }
 
 .name-box {
@@ -67,9 +82,10 @@ html {
 .big-sliding-text-container {
 	font-size: 132px;
 	font-weight: 600;
-	margin: 0 auto;
+	margin: 0;
 	text-align: right;
 	user-select: none;
+	z-index: 1;
 }
 
 .big-sliding-text-container-2 {
@@ -93,10 +109,6 @@ html {
 	left: 20px;
 	top: -56px;
 	white-space: nowrap;
-}
-
-p {
-	font-size: 24px;
 }
 
 .contacts-container {
@@ -132,7 +144,7 @@ p {
 }
 
 .contact a:not(:hover) .rectangle{
-	animation: contacts-animation-disable .4s linear forwards;
+	animation: contacts-animation-disable .4s linear  forwards ;
 }
 
 @keyframes contacts-animation {
@@ -192,7 +204,7 @@ p {
 .button-up a {
 	white-space: nowrap;
 	text-decoration: none;
-	padding: 15px 15px;
+	padding: 15px;
 	margin: 15px;
 	color: black;
 }
@@ -204,7 +216,6 @@ p {
 .button-up:hover {
 	background-color: #e7e7e7;
 	animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-
 }
 
 .center {
@@ -226,17 +237,4 @@ p {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-		/**/
-  /*align-items: center;*/
-  /*align-content: center;
-	}
-	.name-box * {
-  align-items: center;
-  align-self: center;
-
-	}*/
-	/*.preview-about-me img {
-		margin-right: auto;
-		margin-left: auto;
-	}*/
 }
