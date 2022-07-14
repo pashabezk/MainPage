@@ -1,7 +1,7 @@
 // добавление прокручивания текста PASHABEZK при прокрутке страницы
 pashabezk_text = document.getElementById("pashabezk_text");
 pashabezk_text.style.marginRight = '-250px';
-pashabezk_text.style.transition = 'all 0.3s';
+pashabezk_text.style.transition = 'all linear';
 window.addEventListener('scroll', function(e) {
   pashabezk_text.style.marginRight = this.scrollY -250 +"px";
   this.oldScroll = this.scrollY;
@@ -24,7 +24,7 @@ projects =  [
   {
     "title":"HappyNewYear",
     "desc":"JavaScript",
-    "link":"https://github.com/pashabezk/HappyNewYearAnn/tree/main/Game", //https://happy-new-year-ann.herokuapp.com/Game/index.html
+    "link":"https://github.com/pashabezk/HappyNewYearAnn", //https://happy-new-year-ann.herokuapp.com/Game/index.html
     "imgLink":"Img\\Projects\\HappyNewYearAnn.png"
   },
   {
@@ -77,6 +77,8 @@ projects.forEach( elem => {
 
   var img = document.createElement("img");
   img.setAttribute("src", elem.imgLink);
+  img.setAttribute("alt", "фото проекта " + elem.title);
+
 
   var h2 = document.createElement("h2");
   h2.innerText = elem.title;
