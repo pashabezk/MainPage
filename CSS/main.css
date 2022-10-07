@@ -1,13 +1,10 @@
+html,
 body {
 	font: Arial;
 	font-family: sans-serif;
 	overflow-x: hidden;
-	width: 100%;
-}
-
-html {
-	width: 100%;
-	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -16,7 +13,8 @@ p {
 
 .main-container {
 	margin: 15px auto;
-	width: 1024px;
+	width: 100%;
+	max-width: 1000px;
 }
 
 .menu-container {
@@ -50,7 +48,7 @@ p {
 	margin: 15px;
 }
 
-.name-box p {
+.name-box > p {
 	font-size: 32px;
 	font-weight: 600;
 	margin: 15px 0;
@@ -136,41 +134,13 @@ p {
 	display: inline-block;
 	border-radius: 12px;
 	margin-right: 15px;
+	transition: width .4s;
 }
 
 .contact a:hover .rectangle{
 	background: darkslateblue;
-	animation: contacts-animation .4s linear forwards;
-}
-
-.contact a:not(:hover) .rectangle{
-	animation: contacts-animation-disable .4s linear  forwards ;
-}
-
-@keyframes contacts-animation {
-	0% {
-		width: 50px;
-	}
-	50% {
-		width: 70px;
-	}
-	100% {
-		width: 50px;
-		margin-left: 35px;
-	}
-}
-
-@keyframes contacts-animation-disable {
-	0% {
-		width: 50px;
-		margin-left: 35px;
-	}
-	50% {
-		width: 70px;
-	}
-	100% {
-		width: 50px;
-	}
+	width: 70px;
+	transition: all .4s;
 }
 
 .contact-link {
@@ -226,8 +196,8 @@ p {
 
 @media (max-width: 1200px) {
 	.main-container {
-		width: 95%;
-		margin: 15px auto;
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 }
 
@@ -235,6 +205,17 @@ p {
 	.preview-about-me {
 		width: 100%;
 		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.name-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.name-box > p {
+		text-align: center;
+	}
+	.technologies {
 		justify-content: center;
 	}
 }

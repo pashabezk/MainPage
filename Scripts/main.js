@@ -52,9 +52,15 @@ projects =  [
     "imgLink":"Img\\Projects\\TgBotWithAI.png"
   },
   {
+    "title":"DogBreeds",
+    "desc":"React",
+    "link":"https://github.com/pashabezk/DogBreeds",
+    "imgLink":"Img\\Projects\\DogBreeds.png"
+  },
+  {
     "title":"This site",
     "desc":"HTML+CSS+JS",
-    "link":"https://github.com/pashabezk/SiteAboutMe",
+    "link":"https://github.com/pashabezk/MainPage",
     "imgLink":"Img\\Projects\\Site.png"
   }
 ]

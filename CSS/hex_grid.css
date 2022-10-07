@@ -92,7 +92,7 @@
 		margin-left:10%; 
 	}
 }
-@media (max-width: 1200px) and (min-width:901px) { /* сетка 4 - 3 */
+@media (max-width: 1200px) and (min-width:701px) { /* сетка 4 - 3 */
 	.hexGrid{
 		padding-bottom: 5.5%
 	}
@@ -103,7 +103,7 @@
 		margin-left:12.5%; 
 	}
 }
-@media (max-width: 900px) and (min-width:601px) { /* сетка 3 - 2 */
+@media (max-width: 700px)  { /* сетка 3 - 2 */
 	.hexGrid{
 		padding-bottom: 7.4%
 	}
@@ -114,7 +114,8 @@
 		margin-left:16.666%; 
 	}
 }
-@media (max-width: 600px) { /* сетка 2 - 1 */
+/* сетка 2 - 1 */
+/* @media (max-width: 600px) { 
 	.hexGrid{
 		padding-bottom: 11.2%
 	}
@@ -124,4 +125,4 @@
 	.hex:nth-child(3n+3){
 		margin-left:25%;
 	}
-}
+} */
