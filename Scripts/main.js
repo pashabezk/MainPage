@@ -64,6 +64,12 @@ projects = [
 		"imgLink": "Img\\Projects\\DogBreeds.png"
 	},
 	{
+		"title": "Dialer",
+		"desc": "Android",
+		"link": "https://github.com/pashabezk/Dialer",
+		"imgLink": "Img\\Projects\\Dialer.png"
+	},
+	{
 		"title": "This site",
 		"desc": "HTML+CSS+JS",
 		"link": "https://github.com/pashabezk/MainPage",
