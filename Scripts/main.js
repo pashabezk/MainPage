@@ -70,6 +70,18 @@ projects = [
 		"imgLink": "Img\\Projects\\Dialer.png"
 	},
 	{
+		"title": "CarGame",
+		"desc": "Win Forms (C#)",
+		"link": "https://github.com/pashabezk/CarGame",
+		"imgLink": "Img\\Projects\\CarGame.png"
+	},
+	{
+		"title": "TankAndGear",
+		"desc": "Win Forms (C#)",
+		"link": "https://github.com/pashabezk/TankAndGear",
+		"imgLink": "Img\\Projects\\TankAndGear.png"
+	},
+	{
 		"title": "This site",
 		"desc": "HTML+CSS+JS",
 		"link": "https://github.com/pashabezk/MainPage",
