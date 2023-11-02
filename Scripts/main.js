@@ -46,6 +46,12 @@ projects = [
 		"imgLink": "Img\\Projects\\MazeEscape.png"
 	},
 	{
+		"title": "AlienPlatformer",
+		"desc": "Unity",
+		"link": "https://github.com/pashabezk/AlienPlatformer",
+		"imgLink": "Img\\Projects\\AlienPlatformer.png"
+	},
+	{
 		"title": "TicTacToeTgBot",
 		"desc": "Python",
 		"link": "https://github.com/pashabezk/TicTacToeTgBot",
