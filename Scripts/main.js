@@ -16,6 +16,12 @@ projects = [
 		"imgLink": "Img\\Projects\\Checkers.png"
 	},
 	{
+		"title": "SimpleDrawApp",
+		"desc": "React+Apollo",
+		"link": "https://github.com/pashabezk/SimpleDrawApp",
+		"imgLink": "Img\\Projects\\SimpleDrawApp.png"
+	},
+	{
 		"title": "DBComplexity",
 		"desc": "Kotlin",
 		"link": "https://github.com/pashabezk/DBComplexity",
