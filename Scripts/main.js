@@ -16,10 +16,22 @@ projects = [
 		"imgLink": "Img\\Projects\\Checkers.png"
 	},
 	{
+		"title": "Notes",
+		"desc": "React+MobX",
+		"link": "https://github.com/pashabezk/Notes",
+		"imgLink": "Img\\Projects\\Notes.png"
+	},
+	{
 		"title": "SimpleDrawApp",
 		"desc": "React+Apollo",
 		"link": "https://github.com/pashabezk/SimpleDrawApp",
 		"imgLink": "Img\\Projects\\SimpleDrawApp.png"
+	},
+	{
+		"title": "HappyNewYear",
+		"desc": "JavaScript",
+		"link": "https://github.com/pashabezk/HappyNewYearAnn", //https://happy-new-year-ann.herokuapp.com/Game/index.html
+		"imgLink": "Img\\Projects\\HappyNewYearAnn.png"
 	},
 	{
 		"title": "DBComplexity",
@@ -32,12 +44,6 @@ projects = [
 		"desc": "Java",
 		"link": "https://github.com/pashabezk/ExamController",
 		"imgLink": "Img\\Projects\\ExamController.png"
-	},
-	{
-		"title": "HappyNewYear",
-		"desc": "JavaScript",
-		"link": "https://github.com/pashabezk/HappyNewYearAnn", //https://happy-new-year-ann.herokuapp.com/Game/index.html
-		"imgLink": "Img\\Projects\\HappyNewYearAnn.png"
 	},
 	{
 		"title": "VKEmojiKeyboard",
