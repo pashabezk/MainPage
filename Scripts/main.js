@@ -1,14 +1,13 @@
 // добавление прокручивания текста PASHABEZK при прокрутке страницы
-pashabezk_text = document.getElementById("pashabezk_text");
-pashabezk_text.style.marginRight = '-250px';
-pashabezk_text.style.transition = 'all linear';
-window.addEventListener('scroll', function (e) {
-	pashabezk_text.style.marginRight = this.scrollY - 250 + "px";
-	this.oldScroll = this.scrollY;
+const pashabezkText = document.getElementById("pashabezk-text");
+pashabezkText.style.marginRight = "-250px";
+pashabezkText.style.transition = "all linear";
+window.addEventListener("scroll", () => {
+	pashabezkText.style.marginRight = window.scrollY - 250 + "px";
 }, false);
 
 // список проектов, которые надо разместить в сетке проектов
-projects = [
+const projects = [
 	{
 		"title": "Checkers",
 		"desc": "React+Redux",
@@ -30,7 +29,7 @@ projects = [
 	{
 		"title": "HappyNewYear",
 		"desc": "JavaScript",
-		"link": "https://github.com/pashabezk/HappyNewYearAnn", //https://happy-new-year-ann.herokuapp.com/Game/index.html
+		"link": "https://github.com/pashabezk/HappyNewYearAnn",
 		"imgLink": "Img\\Projects\\HappyNewYearAnn.png"
 	},
 	{
@@ -105,33 +104,33 @@ projects = [
 		"link": "https://github.com/pashabezk/MainPage",
 		"imgLink": "Img\\Projects\\Site.png"
 	}
-]
+];
 
 
-let projectsGrid = document.getElementById("projectsList");
+const projectsGrid = document.getElementById("projectsList");
 
 projects.forEach(elem => {
-	let li = document.createElement("li");
-	li.classList.add('hex');
-	li.classList.add('jumping-block');
+	const li = document.createElement("li");
+	li.classList.add("hex");
+	li.classList.add("jumping-block");
 
-	let div = document.createElement("div");
-	div.classList.add('hexIn');
+	const div = document.createElement("div");
+	div.classList.add("hexIn");
 
-	let a = document.createElement("a");
-	a.classList.add('hexLink');
+	const a = document.createElement("a");
+	a.classList.add("hexLink");
 	a.setAttribute("href", elem.link);
 	a.setAttribute("target", "_blank");
 
-	let img = document.createElement("img");
+	const img = document.createElement("img");
 	img.setAttribute("src", elem.imgLink);
 	img.setAttribute("alt", "фото проекта " + elem.title);
 
 
-	let h2 = document.createElement("h2");
+	const h2 = document.createElement("h2");
 	h2.innerText = elem.title;
 
-	let p = document.createElement("p");
+	const p = document.createElement("p");
 	p.innerText = elem.desc;
 
 	a.appendChild(img);
@@ -140,7 +139,7 @@ projects.forEach(elem => {
 	div.appendChild(a);
 	li.appendChild(div);
 	projectsGrid.appendChild(li);
-})
+});
 
 // формат:
 // <li class="hex">
@@ -154,16 +153,16 @@ projects.forEach(elem => {
 // </li>
 
 
-/* Создание возможности появления анимации при прокрутке страницы */
+//#region Создание возможности появления анимации при прокрутке страницы
 
 function animateOnEntry(entry) {
 	entry.forEach(elem => {
 		if (elem.isIntersecting) {
-			elem.target.classList.remove('hide-animation');
-			elem.target.classList.add('show-animation');
+			elem.target.classList.remove("hide-animation");
+			elem.target.classList.add("show-animation");
 		} else {
-			elem.target.classList.remove('show-animation');
-			elem.target.classList.add('hide-animation');
+			elem.target.classList.remove("show-animation");
+			elem.target.classList.add("hide-animation");
 		}
 	});
 }
@@ -171,22 +170,24 @@ function animateOnEntry(entry) {
 function jumpingTextOnEntry(entry) {
 	entry.forEach(elem => {
 		if (elem.isIntersecting) {
-			elem.target.classList.remove('disable-animation-top');
-			elem.target.classList.remove('disable-animation-bottom');
-			elem.target.classList.add('show-animation');
+			elem.target.classList.remove("disable-animation-top");
+			elem.target.classList.remove("disable-animation-bottom");
+			elem.target.classList.add("show-animation");
 		} else {
-			elem.target.classList.remove('show-animation');
-			elem.target.classList.add(elem.boundingClientRect.y <= 100 ? 'disable-animation-top' : 'disable-animation-bottom');
+			elem.target.classList.remove("show-animation");
+			elem.target.classList.add(elem.boundingClientRect.y <= 100 ? "disable-animation-top" : "disable-animation-bottom");
 		}
 	});
 }
 
-let observer = new IntersectionObserver(animateOnEntry, {threshold: [0.5]}); // создаем объект отслеживания, threshold - процент пересечения
-for (let elem of document.querySelectorAll('.animate-it')) {
+const observer = new IntersectionObserver(animateOnEntry, {threshold: [0.5]}); // создаем объект отслеживания, threshold - процент пересечения
+for (const elem of document.querySelectorAll(".animate-it")) {
 	observer.observe(elem); // применяем функцию отслеживания пересечения для всех объектов, у которых есть класс animate-it
 }
 
-let observerForJumpingText = new IntersectionObserver(jumpingTextOnEntry, {threshold: [0.3]}); // создаем объект отслеживания
-for (let elem of document.querySelectorAll('.jumping-block')) {
+const observerForJumpingText = new IntersectionObserver(jumpingTextOnEntry, {threshold: [0.3]}); // создаем объект отслеживания
+for (const elem of document.querySelectorAll(".jumping-block")) {
 	observerForJumpingText.observe(elem); // применяем функцию отслеживания пересечения для всех объектов, у которых есть класс jumping-block
 }
+
+//#endregion

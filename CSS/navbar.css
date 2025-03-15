@@ -12,7 +12,7 @@
 }
 
 .navbar li a {
-	color: dimgrey;
+	color: var(--primary-color);
 	position: relative;
 	text-decoration: none;
 }
@@ -52,5 +52,5 @@
 }
 
 .navbar li a:hover {
-	color: darkslateblue;
+	color: var(--accent-color);
 }

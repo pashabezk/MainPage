@@ -129,22 +129,17 @@
 }
 
 @keyframes shake-bottom {
-	0%,
-	100% {
+	0%, 100% {
 		transform: rotate(0deg);
 		transform-origin: 50% 100%;
 	}
 	10% {
 		transform: rotate(2deg);
 	}
-	20%,
-	40%,
-	60% {
+	20%, 40%, 60% {
 		transform: rotate(-4deg);
 	}
-	30%,
-	50%,
-	70% {
+	30%, 50%, 70% {
 		transform: rotate(4deg);
 	}
 	80% {

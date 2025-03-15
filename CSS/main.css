@@ -1,3 +1,9 @@
+:root {
+	--primary-color: dimgrey;
+	--secondary-color: gray;
+	--accent-color: darkslateblue;
+}
+
 html,
 body {
 	font-family: Arial, sans-serif;
@@ -57,23 +63,25 @@ p {
 .technologies {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 13px;
 }
 
 .technologies p {
-	background-color: dimgrey;
-	border: 15px solid dimgrey;
-	border-radius: 50%;
+	background-color: var(--primary-color);
+	border: 15px solid var(--primary-color);
+	border-radius: 18px;
 	color: white;
 	font-size: 16px;
-	margin: 10px 15px 5px 0;
-	transition: transform .3s;
+	margin: 0;
+	transition: all .3s;
+	cursor: crosshair;
+	user-select: none;
 }
 
 .technologies p:hover {
-	background-color: darkslateblue;
-	border-color: darkslateblue;
-	transform: scale(1.3);
-	user-select: none;
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	transform: scale(1.2);
 }
 
 .big-sliding-text-container {
@@ -86,11 +94,12 @@ p {
 }
 
 .big-sliding-text-container-2 {
+	color: var(--secondary-color);
 	margin: -20px auto 140px;
 }
 
 .header-big {
-	color: gray;
+	color: var(--secondary-color);
 	font-size: 132px;
 	font-weight: 600;
 	user-select: none;
@@ -121,15 +130,16 @@ p {
 .contact a {
 	color: black;
 	text-decoration: none;
+	transition: all .4s;
 }
 
 .contact a:hover {
-	color: darkslateblue;
+	color: var(--accent-color);
 }
 
 .rectangle {
 	width: 50px;
-	background: dimgrey;
+	background: var(--primary-color);
 	display: inline-block;
 	border-radius: 12px;
 	margin-right: 15px;
@@ -137,13 +147,12 @@ p {
 }
 
 .contact a:hover .rectangle {
-	background: darkslateblue;
+	background: var(--accent-color);
 	width: 70px;
-	transition: all .4s;
 }
 
 .contact-link {
-	color: gray;
+	color: var(--secondary-color);
 }
 
 .footer-container {
@@ -153,18 +162,18 @@ p {
 }
 
 .footer-container hr {
-	border: 3px solid dimgrey;
+	border: 3px solid var(--primary-color);
 	width: 70%;
 	border-radius: 3px;
 	margin: 15px auto;
 	margin-bottom: 150px;
-	background-color: dimgrey;
+	background-color: var(--primary-color);
 	transform: scaleX(0);
 }
 
 .button-up {
 	border-radius: 35px;
-	border: 5px solid dimgrey;
+	border: 5px solid var(--primary-color);
 	font-size: 24px;
 	padding: 15px;
 	background-color: white;
@@ -179,7 +188,7 @@ p {
 }
 
 .button-up:hover span {
-	color: darkslateblue;
+	color: var(--accent-color);
 }
 
 .button-up:hover {
