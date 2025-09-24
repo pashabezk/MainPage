@@ -4,28 +4,37 @@
 	--accent-color: darkslateblue;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html,
 body {
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 p {
 	font-size: 24px;
+	margin: 24px 0;
 }
 
-.main-container {
-	margin: 15px auto;
+.main-wrapper {
+	margin: 0 auto;
 	width: 100%;
 	max-width: 1000px;
 }
 
+.main-container {
+	margin: 20px;
+}
+
 .menu-container {
 	font-size: 32px;
-	margin: 15px auto;
-	text-align: center;
 }
 
 .preview-about-me {
@@ -98,23 +107,25 @@ p {
 	margin: -20px auto 140px;
 }
 
+.header-container {
+	position: relative;
+}
+
 .header-big {
 	color: var(--secondary-color);
 	font-size: 132px;
 	font-weight: 600;
 	user-select: none;
 	white-space: nowrap;
+	position: absolute;
 }
 
 .header-small {
 	font-size: 64px;
 	font-weight: 600;
-	height: 30px;
-	margin: 0;
-	position: relative;
-	left: 20px;
-	top: -56px;
+	padding: 96px 0 0 20px;
 	white-space: nowrap;
+	position: relative;
 }
 
 .contacts-container {
@@ -200,13 +211,6 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-@media (max-width: 1200px) {
-	.main-container {
-		margin-right: 20px;
-		margin-left: 20px;
-	}
 }
 
 @media (max-width: 700px) {

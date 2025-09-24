@@ -28,122 +28,130 @@
 	<link rel="stylesheet" href="CSS/hex_grid.css">
 </head>
 <body>
-	<div class="main-container">
-		<header class="menu-container" id="header">
-			<nav class="navbar">
-				<ul>
-					<li><a href="#about">Обо мне</a></li>
-					<li><a href="#projects">Проекты</a></li>
-					<li><a href="#contacts">Контакты</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div class="preview-about-me">
-			<img src="Img/Me.jpg" alt="Фотография Павла">
-			<div class="name-box">
-				<p class="animate-it floating-right-2 hide-animation">Безкоровайный Павел</p>
-				<p class="animate-it floating-right hide-animation">Frontend developer</p>
-				<div class="technologies">
-					<p>TypeScript</p>
-					<p>JavaScript</p>
-					<p>HTML5</p>
-					<p>CSS3</p>
-					<p>React</p>
-					<p>MobX</p>
-					<p>Redux</p>
-					<p>Antd</p>
-					<p>Apollo</p>
-					<p>GraphQL</p>
-					<p>Jest</p>
-					<p>Angular</p>
-					<p>Nx</p>
-					<p>Spectator</p>
-					<p>Jasmine</p>
+	<div class="main-wrapper">
+		<div class="main-container">
+			<header class="menu-container" id="header">
+				<nav class="navbar">
+					<ul>
+						<li><a href="#about">Обо мне</a></li>
+						<li><a href="#projects">Проекты</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="preview-about-me">
+				<img src="Img/Me.jpg" alt="Фотография Павла">
+				<div class="name-box">
+					<p class="animate-it floating-right-2 hide-animation">Безкоровайный Павел</p>
+					<p class="animate-it floating-right hide-animation">Frontend developer</p>
+					<div class="technologies">
+						<p>TypeScript</p>
+						<p>JavaScript</p>
+						<p>HTML5</p>
+						<p>CSS3</p>
+						<p>React</p>
+						<p>MobX</p>
+						<p>Redux</p>
+						<p>Antd</p>
+						<p>Apollo</p>
+						<p>GraphQL</p>
+						<p>Jest</p>
+						<p>Angular</p>
+						<p>Nx</p>
+						<p>Spectator</p>
+						<p>Jasmine</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="big-sliding-text-container">
-			<div id="pashabezk-text">PASHABEZK</div>
-		</div>
-		<div class="big-sliding-text-container big-sliding-text-container-2">
-			<p class="infinity-sliding-text"><span>FRONTEND DEVELOPER FRONTEND DEVELOPER&nbsp;</span></p>
-			<p class="infinity-sliding-text infinity-sliding-text-2"><span>FRONTEND DEVELOPER FRONTEND DEVELOPER&nbsp;</span></p>
-		</div>
-		<div class="header-big animate-it floating-right" id="about">About me</div>
-		<h1 class="header-small animate-it floating-right-2">Обо мне</h1>
-		<div class="about-me">
-			<p class="jumping-block">Привет! Меня зовут Паша.</p>
-			<p class="jumping-block">Добро пожаловать на мой сайт-визитку.</p>
-			<p class="jumping-block">Я студент университета ИТМО факультета программной инженерии и компьютерной техники.</p>
-			<p class="jumping-block">
-				Моя основная специальность - frontend-разработка на React.
-				В процессе обучения и работы имел дело с такими state-менеджерами, как MobX, Redux, Apollo Client.
-				Умею создавать мультиязычные приложения с красивым адаптивным дизайном.
-				Знаю не по наслышке, что такое GraphQl.
-				Для тестирования использую Jest (и не только).
-			</p>
-			<p class="jumping-block">
-				Помимо React осваивал разработку на Angular с плагином Nx.
-				Участвовал в настройке зависимостей Nx-библиотек через eslint-boundaries.
-				А также в проработке правил для настройки локализации.
-				Для тестирования Angular-приложений применял Jasmine и Spectator.
-			</p>
-			<p class="jumping-block">
-				Программирование - это не только моя работа, но и моё увлечение,
-				поэтому в списке проектов ниже можно увидеть не только веб-сайты, но и приложения другого типа.
-				Умею работать с Java/Kotlin, причём создаю как настольные, так и мобильные приложения.
-				Могу написать бота для телеграмм на Python, пробовал создавать игры на Unity;
-				и даже когда-то запускал собственную операционную систему с помощью ассемблера и C.
-				Такое многообразие опыта позволяет с легкостью осваивать новые технологии в самые короткие сроки
-				и привносить лучшие практики из разных сфер в свои проекты
-			</p>
-		</div>
-		<div class="header-big animate-it floating-right" id="projects">Projects</div>
-		<h1 class="header-small animate-it floating-right-2">Проекты</h1>
-		<ul class="hexGrid" id="projectsList">
-			<noscript>Enable javascript to see projects list</noscript>
-		</ul>
-		<div class="header-big animate-it floating-right" id="contacts">Contacts</div>
-		<h1 class="header-small animate-it floating-right-2">Контакты</h1>
-		<div class="contacts-container">
-			<p class="jumping-block">Во всех социальных сетях меня можно найти по короткому адресу <span style="color: blue;">@pashabezk</span></p>
-			<div class="contact jumping-block">
-				<a href="https://vk.me/pashabezk" target="_blank">
-					<span class="rectangle">&nbsp;</span>
-					Вконтакте
-					<span class="contact-link">vk.me/pashabezk</span>
-				</a>
+			<div class="big-sliding-text-container">
+				<div id="pashabezk-text">PASHABEZK</div>
 			</div>
-			<div class="contact jumping-block">
-				<a href="https://t.me/pashabezk" target="_blank">
-					<span class="rectangle">&nbsp;</span>
-					Telegram
-					<span class="contact-link">t.me/pashabezk</span>
-				</a>
+			<div class="big-sliding-text-container big-sliding-text-container-2">
+				<p class="infinity-sliding-text"><span>FRONTEND DEVELOPER FRONTEND DEVELOPER&nbsp;</span></p>
+				<p class="infinity-sliding-text infinity-sliding-text-2"><span>FRONTEND DEVELOPER FRONTEND DEVELOPER&nbsp;</span></p>
 			</div>
-			<div class="contact jumping-block">
-				<a href="https://instagram.com/pashabezk" target="_blank">
-					<span class="rectangle">&nbsp;</span>
-					Instagram
-					<span class="contact-link">instagram.com/pashabezk</span>
-				</a>
+			<div class="header-container" id="about">
+				<div class="header-big animate-it floating-right">About me</div>
+				<h1 class="header-small animate-it floating-right-2">Обо мне</h1>
 			</div>
-			<div class="contact jumping-block">
-				<a href="https://github.com/pashabezk" target="_blank">
-					<span class="rectangle">&nbsp;</span>
-					GitHub
-					<span class="contact-link">github.com/pashabezk</span>
-				</a>
+			<div class="about-me">
+				<p class="jumping-block">Привет! Меня зовут Паша.</p>
+				<p class="jumping-block">Добро пожаловать на мой сайт-визитку.</p>
+				<p class="jumping-block">Я студент университета ИТМО факультета программной инженерии и компьютерной техники.</p>
+				<p class="jumping-block">
+					Моя основная специальность - frontend-разработка на React.
+					В процессе обучения и работы имел дело с такими state-менеджерами, как MobX, Redux, Apollo Client.
+					Умею создавать мультиязычные приложения с красивым адаптивным дизайном.
+					Знаю не по наслышке, что такое GraphQl.
+					Для тестирования использую Jest (и не только).
+				</p>
+				<p class="jumping-block">
+					Помимо React осваивал разработку на Angular с плагином Nx.
+					Участвовал в настройке зависимостей Nx-библиотек через eslint-boundaries.
+					А также в проработке правил для настройки локализации.
+					Для тестирования Angular-приложений применял Jasmine и Spectator.
+				</p>
+				<p class="jumping-block">
+					Программирование - это не только моя работа, но и моё увлечение,
+					поэтому в списке проектов ниже можно увидеть не только веб-сайты, но и приложения другого типа.
+					Умею работать с Java/Kotlin, причём создаю как настольные, так и мобильные приложения.
+					Могу написать бота для телеграмм на Python, пробовал создавать игры на Unity;
+					и даже когда-то запускал собственную операционную систему с помощью ассемблера и C.
+					Такое многообразие опыта позволяет с легкостью осваивать новые технологии в самые короткие сроки
+					и привносить лучшие практики из разных сфер в свои проекты
+				</p>
 			</div>
+			<div class="header-container" id="projects">
+				<div class="header-big animate-it floating-right">Projects</div>
+				<h1 class="header-small animate-it floating-right-2">Проекты</h1>
+			</div>
+			<ul class="hexGrid" id="projectsList">
+				<noscript>Enable javascript to see projects list</noscript>
+			</ul>
+			<div class="header-container" id="contacts">
+				<div class="header-big animate-it floating-right">Contacts</div>
+				<h1 class="header-small animate-it floating-right-2">Контакты</h1>
+			</div>
+			<div class="contacts-container">
+				<p class="jumping-block">Во всех социальных сетях меня можно найти по короткому адресу <span style="color: blue;">@pashabezk</span></p>
+				<div class="contact jumping-block">
+					<a href="https://vk.me/pashabezk" target="_blank">
+						<span class="rectangle">&nbsp;</span>
+						Вконтакте
+						<span class="contact-link">vk.me/pashabezk</span>
+					</a>
+				</div>
+				<div class="contact jumping-block">
+					<a href="https://t.me/pashabezk" target="_blank">
+						<span class="rectangle">&nbsp;</span>
+						Telegram
+						<span class="contact-link">t.me/pashabezk</span>
+					</a>
+				</div>
+				<div class="contact jumping-block">
+					<a href="https://instagram.com/pashabezk" target="_blank">
+						<span class="rectangle">&nbsp;</span>
+						Instagram
+						<span class="contact-link">instagram.com/pashabezk</span>
+					</a>
+				</div>
+				<div class="contact jumping-block">
+					<a href="https://github.com/pashabezk" target="_blank">
+						<span class="rectangle">&nbsp;</span>
+						GitHub
+						<span class="contact-link">github.com/pashabezk</span>
+					</a>
+				</div>
+			</div>
+			<footer class="footer-container">
+				<hr class="animate-it scaling-x">
+				<div class="center">
+					<button class="button-up animate-it add-letter-spacing">
+						<a href="#header"><span>▲</span> Наверх <span>▲</span></a>
+					</button>
+				</div>
+			</footer>
 		</div>
-		<footer class="footer-container">
-			<hr class="animate-it scaling-x">
-			<div class="center">
-				<button class="button-up animate-it add-letter-spacing">
-					<a href="#header"><span>▲</span> Наверх <span>▲</span></a>
-				</button>
-			</div>
-		</footer>
 	</div>
 	<script src="Scripts/main.js"></script>
 </body>

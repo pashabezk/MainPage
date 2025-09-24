@@ -1,13 +1,18 @@
+.navbar {
+	margin: 15px 0;
+}
+
 .navbar ul {
 	display: flex;
-	justify-content: space-around;
-	padding: 0;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	gap: 15px 20px;
 }
 
 .navbar li {
 	list-style: none;
-	padding: 10px 20px;
 	white-space: nowrap;
 }
 
