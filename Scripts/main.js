@@ -183,7 +183,6 @@ customElements.define("project-hex", ProjectHex);
 const projectsGrid = document.getElementById("projectsList");
 projects.forEach(elem => {
 	const projectElement = new ProjectHex(elem);
-	console.log(projectElement);
 	projectsGrid.appendChild(projectElement);
 });
 

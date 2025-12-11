@@ -2,6 +2,9 @@
 	--primary-color: dimgrey;
 	--secondary-color: gray;
 	--accent-color: darkslateblue;
+
+	--error-bg: #fff2f0;
+	--error-border-color: #ffccc7;
 }
 
 * {
@@ -35,6 +38,21 @@ p {
 
 .menu-container {
 	font-size: 32px;
+}
+
+.error-alert {
+	background: var(--error-bg);
+	border: 1px solid var(--error-border-color);
+	border-radius: 8px;
+	padding: 12px 15px;
+	margin: 20px 15px 30px;
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.error-alert p {
+	margin: 0;
 }
 
 .preview-about-me {

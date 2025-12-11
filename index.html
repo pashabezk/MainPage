@@ -30,6 +30,12 @@
 <body>
 	<div class="main-wrapper">
 		<div class="main-container">
+			<noscript>
+				<div class="error-alert">
+					<img width="25px" height="25px" src="Img/Icons/red-cross.svg" alt=""/>
+					<p>У вас выключен JavaScript. Часть данных будет отображаться некорректно</p>
+				</div>
+			</noscript>
 			<header class="menu-container" id="header">
 				<nav class="navbar">
 					<ul>
@@ -106,7 +112,12 @@
 				<h1 class="header-small animate-it floating-right-2">Проекты</h1>
 			</div>
 			<div class="hexGrid" id="projectsList">
-				<noscript>Enable javascript to see projects list</noscript>
+				<noscript>
+					<div class="error-alert">
+						<img width="25px" height="25px" src="Img/Icons/red-cross.svg" alt=""/>
+						<p>Включите JavaScript для загрузки списка проектов</p>
+					</div>
+				</noscript>
 			</div>
 			<div class="header-container" id="contacts">
 				<div class="header-big animate-it floating-right">Contacts</div>
