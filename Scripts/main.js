@@ -1,4 +1,5 @@
-// добавление прокручивания текста PASHABEZK при прокрутке страницы
+//#region добавление прокручивания текста PASHABEZK при прокрутке страницы
+
 const pashabezkText = document.getElementById("pashabezk-text");
 pashabezkText.style.marginRight = "-250px";
 pashabezkText.style.transition = "all linear";
@@ -6,7 +7,20 @@ window.addEventListener("scroll", () => {
 	pashabezkText.style.marginRight = window.scrollY - 250 + "px";
 }, false);
 
-// список проектов, которые надо разместить в сетке проектов
+//#endregion
+
+
+//#region работа с сеткой проектов
+
+/**
+ * @typedef Project
+ * @property {string} title - Заголовок проекта
+ * @property {string} desc - Описание проекта
+ * @property {string} link - Ссылка на проект
+ * @property {string} imgLink - Путь к изображению
+ */
+
+/** Список проектов, которые надо разместить в сетке проектов */
 const projects = [
 	{
 		"title": "Checkers",
@@ -106,51 +120,74 @@ const projects = [
 	}
 ];
 
+class ProjectHex extends HTMLElement {
+	/**
+	 * @param project {Project} - объект проекта
+	 */
+	constructor(project) {
+		super();
+		this.appendChild(this.#createTemplate(project));
+	}
+
+	/**
+	 * Создаёт разметку элемента
+	 *
+	 * @param project {Project} - объект проекта
+	 *
+	 * @example template result
+	 * <li class="hex">
+	 * 	<div class="hexIn">
+	 * 		<a class="hexLink" href="javascript:void(0)">
+	 * 			<img src="Img\Projects\2.jpg" alt=""/>
+	 * 			<h2>Заголовок</h2>
+	 * 			<p>Краткий текст</p>
+	 * 		</a>
+	 * 	</div>
+	 * </li>
+	 */
+	#createTemplate(project) {
+		this.classList.add('my-class')
+		this.classList.add("hex");
+		this.classList.add("jumping-block");
+
+		const div = document.createElement("div");
+		div.classList.add("hexIn");
+
+		const a = document.createElement("a");
+		a.classList.add("hexLink");
+		a.setAttribute("href", project.link);
+		a.setAttribute("target", "_blank");
+
+		const img = document.createElement("img");
+		img.setAttribute("src", project.imgLink);
+		img.setAttribute("alt", "фото проекта " + project.title);
+
+
+		const h2 = document.createElement("h2");
+		h2.innerText = project.title;
+
+		const p = document.createElement("p");
+		p.innerText = project.desc;
+
+		a.appendChild(img);
+		a.appendChild(h2);
+		a.appendChild(p);
+		div.appendChild(a);
+
+		return div;
+	}
+}
+
+customElements.define("project-hex", ProjectHex);
 
 const projectsGrid = document.getElementById("projectsList");
-
 projects.forEach(elem => {
-	const li = document.createElement("li");
-	li.classList.add("hex");
-	li.classList.add("jumping-block");
-
-	const div = document.createElement("div");
-	div.classList.add("hexIn");
-
-	const a = document.createElement("a");
-	a.classList.add("hexLink");
-	a.setAttribute("href", elem.link);
-	a.setAttribute("target", "_blank");
-
-	const img = document.createElement("img");
-	img.setAttribute("src", elem.imgLink);
-	img.setAttribute("alt", "фото проекта " + elem.title);
-
-
-	const h2 = document.createElement("h2");
-	h2.innerText = elem.title;
-
-	const p = document.createElement("p");
-	p.innerText = elem.desc;
-
-	a.appendChild(img);
-	a.appendChild(h2);
-	a.appendChild(p);
-	div.appendChild(a);
-	li.appendChild(div);
-	projectsGrid.appendChild(li);
+	const projectElement = new ProjectHex(elem);
+	console.log(projectElement);
+	projectsGrid.appendChild(projectElement);
 });
 
-// формат:
-// <li class="hex">
-//   <div class="hexIn">
-//     <a class="hexLink" href="javascript:void(0)">
-//       <img src="Img\Projects\2.jpg" alt=""/>
-//       <h2>Заголовок</h2>
-//       <p>Краткий текст</p>
-//     </a>
-//   </div>
-// </li>
+//#endregion
 
 
 //#region Создание возможности появления анимации при прокрутке страницы
