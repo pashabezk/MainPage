@@ -146,9 +146,7 @@ class ProjectHex extends HTMLElement {
 	 * </li>
 	 */
 	#createTemplate(project) {
-		this.classList.add('my-class')
-		this.classList.add("hex");
-		this.classList.add("jumping-block");
+		this.classList.add("hex", "jumping-block");
 
 		const div = document.createElement("div");
 		div.classList.add("hexIn");
@@ -181,10 +179,7 @@ class ProjectHex extends HTMLElement {
 customElements.define("project-hex", ProjectHex);
 
 const projectsGrid = document.getElementById("projectsList");
-projects.forEach(elem => {
-	const projectElement = new ProjectHex(elem);
-	projectsGrid.appendChild(projectElement);
-});
+projects.forEach(elem => projectsGrid.appendChild(new ProjectHex(elem)));
 
 //#endregion
 

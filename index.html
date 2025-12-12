@@ -25,9 +25,10 @@
 	<link rel="stylesheet" href="CSS/navbar.css">
 	<link rel="stylesheet" href="CSS/main.css">
 	<link rel="stylesheet" href="CSS/animation.css">
-	<link rel="stylesheet" href="CSS/hex_grid.css">
+	<link rel="stylesheet" href="CSS/hex-grid.css">
 </head>
 <body>
+	<script src="Scripts/BilingualHeadingElement.js"></script>
 	<div class="main-wrapper">
 		<div class="main-container">
 			<noscript>
@@ -76,10 +77,8 @@
 				<p class="infinity-sliding-text"><span>FRONTEND DEVELOPER FRONTEND DEVELOPER&nbsp;</span></p>
 				<p class="infinity-sliding-text infinity-sliding-text-2"><span>FRONTEND DEVELOPER FRONTEND DEVELOPER&nbsp;</span></p>
 			</div>
-			<div class="header-container" id="about">
-				<div class="header-big animate-it floating-right">About me</div>
-				<h1 class="header-small animate-it floating-right-2">Обо мне</h1>
-			</div>
+			<div id="about"></div>
+			<bilingual-heading data-ru-heading="Обо мне" data-en-heading="About me"></bilingual-heading>
 			<div class="about-me">
 				<p class="jumping-block">Привет! Меня зовут Паша.</p>
 				<p class="jumping-block">Добро пожаловать на мой сайт-визитку.</p>
@@ -107,10 +106,8 @@
 					и привносить лучшие практики из разных сфер в свои проекты
 				</p>
 			</div>
-			<div class="header-container" id="projects">
-				<div class="header-big animate-it floating-right">Projects</div>
-				<h1 class="header-small animate-it floating-right-2">Проекты</h1>
-			</div>
+			<div id="projects"></div>
+			<bilingual-heading data-ru-heading="Проекты" data-en-heading="Projects"></bilingual-heading>
 			<div class="hexGrid" id="projectsList">
 				<noscript>
 					<div class="error-alert">
@@ -119,10 +116,8 @@
 					</div>
 				</noscript>
 			</div>
-			<div class="header-container" id="contacts">
-				<div class="header-big animate-it floating-right">Contacts</div>
-				<h1 class="header-small animate-it floating-right-2">Контакты</h1>
-			</div>
+			<div id="contacts"></div>
+			<bilingual-heading data-ru-heading="Контакты" data-en-heading="Contacts"></bilingual-heading>
 			<div class="contacts-container">
 				<p class="jumping-block">Во всех социальных сетях меня можно найти по короткому адресу <span style="color: blue;">@pashabezk</span></p>
 				<div class="contact jumping-block">
