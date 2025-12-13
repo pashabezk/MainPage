@@ -26,6 +26,13 @@ p {
 	margin: 24px 0;
 }
 
+bilingual-heading:not(:defined)::before {
+	content: attr(data-ru-heading);
+	font-size: 132px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
 .main-wrapper {
 	margin: 0 auto;
 	width: 100%;
